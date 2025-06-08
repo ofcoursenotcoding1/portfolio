@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            text-decoration: none;
+            background: rgb(0, 0, 33);
+
+            .navbar {
+                font-family: calibri;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            .navdiv {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo a {
+                font-size: 35px;
+                font-weight: 600;
+                color: white;
+            }
+
+            li {
+                list-style: none;
+                display: inline-block;
+            }
+
+            li a {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                margin-right: 25px;
+            }
+
+            button {
+                background-color: white;
+                margin-left: 10px;
+                border-radius: 10px;
+                padding: 10px;
+                width: 90px;
+            }
+
+            button a {
+                color: white;
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            h1 {
+                color: white;
+                padding: 10px;
+                text-align: center;
+                font-size: 60px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .firstsection {
+                display: flex;
+                justify-content: space-around;
+                margin: 23px 0;
+            }
+
+            .firstsection>div {
+                width: 40%;
+            }
+
+            .leftsection {
+                margin: 30px 0;
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                width: 50%;
+                margin: 50px 0;
+                margin-right: 50px;
+            }
+
+            .purple {
+                color: purple;
+            }
+
+
+
+
+            input {
+                background-color: white;
+                width: 70%;
+                margin-left: 12%;
+                font-size: 20px;
+                padding: 16px 16px;
+                border-radius: 10px;
+                border-color: black;
+                margin-bottom: 20px;
+
+            }
+
+            textarea {
+                background-color: white;
+                width: 70%;
+                margin-left: 12%;
+                padding: 16px 16px;
+                font-size: 20px;
+                border-radius: 10px;
+                border-color: black;
+                margin-bottom: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            input:focus-within {
+                outline: none;
+                border-color: #5bb183;
+                border-width: 3px;
+
+
+            }
+
+            textarea:focus-within {
+                outline: none;
+                border-color: #5bb183;
+                border-width: 3px;
+
+
+
+            }
+
+
+            button {
+                background-color: #5bb183;
+                border-radius: 25px;
+                border-color: black;
+                font-size: 18px;
+                padding: 10px 10px;
+                text-align: center;
+                display: flex;
+                margin: auto;
+            }
+
+            button:hover {
+                opacity: 80%;
+                cursor: pointer;
+
+            }
+            
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Amit's Portfolio</a> </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="certificate.html" target="_blank">Certificates</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Download CV</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="leftsection">
+            
+
+
+            
+            <span id="element"></span>
+        </div>
+        <div class="rightsection">
+            <img src="wo.png">
+        </div>
+    </section>
+
+    <section class="secondsection"> 
+        <main>
+            <form action="https://formspree.io/f/xnnvpadw" method="POST"> 
+              <h1> Contact Form</h1>
+              <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+              <input type="text" name="Last" placeholder="Last Name" autocomplete="off" required>
+              <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+              <textarea rows="5" cols="60" name="message" placeholder="Enter your Message" autocomplete="off" required> </textarea>
+              <button type="submit"> Send Message</button>
+            </form>
+            <br>
+            
+        
+            </section>
+        </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi, My name is Amit', 'I’m deeply passionate about mathematics, computer science, and artificial intelligence.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
